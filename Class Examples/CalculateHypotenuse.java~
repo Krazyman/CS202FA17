@@ -1,0 +1,14 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Aug 23, 2017
+  * Excercise: another example in class
+  * Purpose: to calculate the hypotenuse
+  * Input: the sides a and b 
+  * Outputs: Value of the hypotenuse of a triangle
+  * *******************************************/
+
+public class CalculateHypotenuse
+{
+  public static void main(String[] args) 
+  {
+    double a=10, b=10, hypotenuse;
