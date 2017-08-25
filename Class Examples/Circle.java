@@ -11,7 +11,8 @@ public class Circle
 {
   public static void main(String[] args)
   {
-    double radius=10, area, circumference;
+    double radius=10, area, import javafx.scene.shape.Circle;
+    umference;
     area = Math.PI*radius*radius;
     circumference = 2*Math.PI*radius;
     System.out.println("The area is " + area);

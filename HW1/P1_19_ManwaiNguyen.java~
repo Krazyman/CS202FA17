@@ -1,0 +1,22 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Aug 23, 2017
+  * Excercise: P1.19
+  * Purpose: to find the sum of the first ten positivie numbers
+  * Input: None
+  * Outputs: Sum
+  * *******************************************/
+
+public class P1_19_ManwaiNguyen 
+{
+  public static void main(String[] args) 
+   {
+    System.out.println("Sales Tax Rates");
+    System.out.println("---------------");
+    System.out.println("California 7.5%");
+    System.out.println();
+    System.out.println();
+    System.out.println();
+    System.out.println();
+   }
+ }
