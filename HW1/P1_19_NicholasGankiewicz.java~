@@ -1,0 +1,11 @@
+public class P1_19_NicholasGankiewicz {
+  
+  public static void main(String[] args) {
+  
+  System.out.println("Wisconsin , Sales Tax Rate : 5.43%");
+  System.out.println("Maine , Sales Tax Rate : 6.25%');
+  System.out.println("New York , Sales Tax Rate : 6.90%");                   
+  System.out.println("Florida , Sales Tax Rate : 6.65%");
+  System.out.println("Ohio , Sales Tax Rates : 7.10%");
+                     }
+}

@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class Volume2 {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    
+    System.out.print("PLease enter the price for a six-pack: ");
+    double canVolume = in.nextDouble();

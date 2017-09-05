@@ -9,7 +9,7 @@
 
 public class P1_19_ManwaiNguyen 
 {
-  public static void main(String[] args) 
+  public static void main(String[] args) // Prints the Sales Tax Rates of five states
    {
     System.out.println("Sales Tax Rates");
     System.out.println("---------------");

@@ -8,10 +8,10 @@
   * *******************************************/
 
 import javax.swing.JOptionPane;
-public class DialogViewer
+public class P1_14_ManwaiNguyen
 {
-public static void main(String[] args)
+public static void main(String[] args) // Displays "Hello, Manwai Nguyen!" in a popup 
 {
-JOptionPane.showMessageDialog(null, "Hello, World!");
+JOptionPane.showMessageDialog(null, "Hello, Manwai Nguyen!");
 }
 }

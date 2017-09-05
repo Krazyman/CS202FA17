@@ -11,10 +11,10 @@ public class P1_4_ManwaiNguyen
 {
   public static void main(String[] args) 
    {
-    double n=1000;
-    for (int i=0; i<3; i++) {
-     n*=1.05;
-     System.out.println(n);
+    double balance=1000; // Initialize the balance variable for the account
+    for (int i=0; i<3; i++) { // Calculate the new balance each year
+     balance*=1.05; 
+     System.out.println(balance);
     }
    }
  }

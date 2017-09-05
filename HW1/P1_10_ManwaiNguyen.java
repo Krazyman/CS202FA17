@@ -9,12 +9,12 @@
 
 public class P1_10_ManwaiNguyen
 {
-  public static void main(String[] args) 
+  public static void main(String[] args) // Prints an animal saying hello 
    {
     System.out.println(" /\\_/\\    -----   ");
-    System.out.println("( ' ' ) / Hello  \\'");
-    System.out.println("(  -  )<  Manwai  | ");
-    System.out.println(" | | |  \\ Nguyen!/ ");
+    System.out.println("( ' ' ) / Hello \\'");
+    System.out.println("(  -  )<  Manwai!| ");
+    System.out.println(" | | |  \\       / ");
     System.out.println("(__|__)   -----  ");
    }
  }

@@ -11,10 +11,10 @@ public class P1_2_ManwaiNguyen
 {
   public static void main(String[] args) 
    {
-    double num=0; // Create the variable to use for calculating the sum 
-    for (int i=1; i<11; i++) { // Adds ten positive integers in the loop
-     num+=i;
+    double n=0;
+    for (int i=1; i<11; i++) {
+     n+=i;
     }
-    System.out.println(num);
+    System.out.println(n);
    }
  }

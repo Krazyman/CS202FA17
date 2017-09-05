@@ -2,19 +2,19 @@
   * Name: Manwai Nguyen
   * DateL Aug 23, 2017
   * Excercise: P1.4
-  * Purpose: to find the sum of the first ten positivie numbers
+  * Purpose: find the balance of an account after the first 3 years
   * Input: None
-  * Outputs: Sum
+  * Outputs: Balance
   * *******************************************/
 
-public class P1_4_ManwaiNguye
+public class P1_4_ManwaiNguyen
 {
   public static void main(String[] args) 
    {
-    double n=0;
-    for (int i=1; i<11; i++) {
-     n+=i;
+    double n=1000;
+    for (int i=0; i<3; i++) {
+     n*=1.05;
+     System.out.println(n);
     }
-    System.out.println(n);
    }
  }
