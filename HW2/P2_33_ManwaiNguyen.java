@@ -1,3 +1,12 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Sep 6, 2017
+  * Excercise: P2.33
+  * Purpose: to find the electric force of two particles
+  * Input: charge of both particles and distance 
+  * Outputs: electric force
+  * *******************************************/
+
 import java.util.Scanner;
 
 public class P2_33_ManwaiNguyen {

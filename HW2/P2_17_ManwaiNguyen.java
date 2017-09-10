@@ -1,3 +1,12 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Sep 6, 2017
+  * Excercise: P2.17
+  * Purpose: find the time difference
+  * Input: first time and second time
+  * Outputs: hours and minutes apart
+  * *******************************************/
+
 import java.util.Scanner;
 
 public class P2_17_ManwaiNguyen {

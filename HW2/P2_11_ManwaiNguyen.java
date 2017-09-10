@@ -1,3 +1,13 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Sep 6, 2017
+  * Excercise: P2.11
+  * Purpose: calculate the cost to go 100 miles and 
+  * how far the car can go with current fuel
+  * Input: number of gallons, miles per gallons, price per gallon
+  * Outputs: cost and distance
+  * *******************************************/
+
 import java.util.Scanner;
 
 public class P2_11_ManwaiNguyen {

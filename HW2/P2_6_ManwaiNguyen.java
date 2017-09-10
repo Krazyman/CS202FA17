@@ -1,3 +1,12 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Sep 6, 2017
+  * Excercise: P2.6
+  * Purpose: convert meters to miles, foot, and inches
+  * Input: meters
+  * Outputs: miles, foot, inches
+  * *******************************************/
+
 import java.util.Scanner;
 
 public class P2_6_ManwaiNguyen {

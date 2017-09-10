@@ -1,3 +1,12 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Sep 6, 2017
+  * Excercise: P2.29
+  * Purpose: find the dew temperature
+  * Input: relative humidity and actual temperature
+  * Outputs: dew temperature
+  * *******************************************/
+
 import java.util.Scanner;
 
 public class P2_29_ManwaiNguyen {
@@ -20,8 +29,11 @@ public class P2_29_ManwaiNguyen {
     // calculate the dew temperature
     double dewTemperature = ((a*T)/(b+T)) + Math.log(RH);
     
+    // final calculation for dew temperature
+    double result = (b * dewTemperature) / (a - dewTemperature);
+    
     // print dew temperature
-    System.out.println("The dew temperature is " + dewTemperature + ".");
+    System.out.println("The dew temperature is " + result + ".");
   }
 }
 
