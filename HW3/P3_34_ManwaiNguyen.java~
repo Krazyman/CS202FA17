@@ -1,0 +1,41 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * DateL Sep 11, 2017
+  * Excercise: P3.34
+  * Purpose: Calculate the discount coupon given
+  * Input: amount used in market
+  * Outputs: discount given and will receive
+  * *******************************************/
+
+import java.util.Scanner;
+
+public class P3_34_ManwaiNguyen {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    
+    System.out.print("Please enter the cost of your groceries: ");
+    double money = in.nextDouble();
+    
+    // check where you land depending on your amount
+    if (money<10) {
+      System.out.println("No coupon");
+    } else if (money<60) {
+      System.out.print("You win a discount coupon of $ ");
+      System.out.print(money*.08); // calculate discount
+      System.out.println(". (8% of your purchase)");
+    } else if (money<150) {
+      System.out.print("You win a discount coupon of $ ");
+      System.out.print(money*.1);
+      System.out.println(". (8% of your purchase)");
+    } else if (money<210) {
+      System.out.print("You win a discount coupon of $ ");
+      System.out.print(money*.12);
+      System.out.println(". (8% of your purchase)");
+    } else {
+      System.out.print("You win a discount coupon of $ ");
+      System.out.print(money*.14);
+      System.out.println(". (8% of your purchase)");
+    }
+    
+  }
+}
