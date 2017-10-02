@@ -1,0 +1,8 @@
+import java.util.Scanner;
+
+public class test {
+  public static void main(String[] args) {
+    double x = 2.499, y = -1.501;
+    (int) Math.round(x) + (int) Math.round(y);
+  }
+}
