@@ -1,0 +1,6 @@
+Argee:Dinner:7.60:062217
+Nich:Lodging:8.05:062217
+Manwai:Conference:10.00:062217
+Bajo:Dinner:14.99:062217
+Mark:Bags:25.00:062217
+Brick:Bags:10.05:062217

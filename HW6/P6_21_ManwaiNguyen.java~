@@ -1,0 +1,20 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 9, 2017
+  * Excercise: P6.21
+  * Purpose: 
+  * Input:
+  * Outputs: 
+  * *******************************************/
+
+import java.util.Scanner;
+import java.util.Arrays;
+
+public class P6_21_ManwaiNguyen {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+   
+    in.close();
+    
+  }
+}

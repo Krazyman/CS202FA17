@@ -1,0 +1,31 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 24, 2017
+  * Excercise: P7.1
+  * Purpose: 
+  * Input: 
+  * Outputs: 
+  * *******************************************/
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+import java.util.Scanner;
+
+public class P7_1_ManwaiNguyen {
+  public static void main(String[] args) throws FileNotFoundException {    
+    String fileName = "hello.txt";
+    
+    File inputFile = new File(fileName);
+    Scanner in = new Scanner(inputFile);
+    PrintWriter out = new PrintWriter(fileName);
+    out.print("Hello, World!");
+    
+    in.close();
+    out.close();
+    
+    File newInputFile = new File(fileName);
+    Scanner ins = new Scanner(newInputFile);
+    String statement = ins.nextLine();
+    System.out.println(statement);
+  }
+}

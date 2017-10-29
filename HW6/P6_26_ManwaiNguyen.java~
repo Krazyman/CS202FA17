@@ -1,0 +1,28 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 9, 2017
+  * Excercise: P6.26
+  * Purpose: 
+  * Input:
+  * Outputs: 
+  * *******************************************/
+
+import java.util.ArrayList;
+
+public class P6_26_ManwaiNguyen {
+  public static void main(String[] args) {
+    ArrayList<Integer> array1 = new ArrayList<Integer>(Arrays.asList(1,4,9,16));
+    ArrayList<Integer> array2 = {9,7,4,9,11};
+    ArrayList<Integer> array3 = new ArrayList<Integer>();
+    array3 = append(array1, array2);
+    System.out.println(Arrays.toString(array3));
+  }
+  
+  public static ArrayList<Integer> append(ArrayList<Integer> a, ArrayList<Integer> b) {
+    for (int i=0; i<b.size(); i++) {
+     a.add(b.get(i)); 
+    }
+    
+    return a;
+  }
+}

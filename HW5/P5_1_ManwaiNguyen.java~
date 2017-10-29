@@ -1,0 +1,40 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 7, 2017
+  * Excercise: P5.1
+  * Purpose: 
+  * Input: 
+  * Outputs: 
+  * *******************************************/
+
+import java.util.Scanner;
+
+public class P5_1_ManwaiNguyen {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    System.out.println("Please input three numbers:" );
+    double x = in.nextDouble();
+    double y = in.nextDouble();
+    double z = in.nextDouble();
+    double small = smallest(x, y, z);
+    double mean = average(x, y, z);
+    System.out.println("The smallest of the three numbers is " + small);
+    System.out.println("The average of the three numbers is " + mean);
+    in.close();
+  }
+  
+  public static double smallest(double x, double y, double z) {
+    if (x < y && x < z) {
+     return x; 
+    } else if (y < x && y < z) {
+     return y;
+    } else {
+     return z;
+    }
+  }
+  
+  public static double average(double x, double y, double z) {
+    double mean = (x+y+z)/3;
+    return mean;
+  }
+}

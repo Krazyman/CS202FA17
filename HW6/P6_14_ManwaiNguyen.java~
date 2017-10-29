@@ -1,0 +1,24 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 9, 2017
+  * Excercise: P6.14
+  * Purpose: 
+  * Input:
+  * Outputs: 
+  * *******************************************/
+import java.util.Arrays;
+
+public class P6_14_ManwaiNguyen {
+  public static void main(String[] args) {
+    final int length = 20
+    int[] randomTable = new int[length];
+    for (int i=0; i<randomTable.length; i++) {
+     int num = (int)(Math.random() * 100);
+     randomTable[i] = num;
+    }
+    System.out.println("Random numbers: " + Arrays.toString(randomTable));
+    Arrays.sort(randomTable);
+    System.out.println("Sorted Random numbers: " + Arrays.toString(randomTable));
+    
+  }
+}

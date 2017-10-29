@@ -1,0 +1,22 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 7, 2017
+  * Excercise: P5.15
+  * Purpose: 
+  * Input: 
+  * Outputs: 
+  * *******************************************/
+
+import java.util.Scanner;
+
+public class P5_15_ManwaiNguyen {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    
+    in.close();
+  }
+  
+  public static String reverse(String str) {
+    
+  }
+}

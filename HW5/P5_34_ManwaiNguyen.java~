@@ -1,0 +1,18 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 7, 2017
+  * Excercise: P5.34
+  * Purpose: 
+  * Input: 
+  * Outputs: 
+  * *******************************************/
+
+import java.util.Scanner;
+
+public class P5_34_ManwaiNguyen {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in);
+    
+    in.close();
+  }
+}

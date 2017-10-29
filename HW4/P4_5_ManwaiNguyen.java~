@@ -13,6 +13,7 @@ public class P4_5_ManwaiNguyen {
   public static void main(String[] args) {
     Scanner in = new Scanner(System.in);
     
+    // Ask user for floating-point input
     double sum=0, count=0;
     System.out.print("Please enter floating-point values, enter any string to finish: ");
     double smallest = in.nextDouble();
@@ -20,6 +21,8 @@ public class P4_5_ManwaiNguyen {
     sum += smallest;
     count ++;
     System.out.print("Please enter floating-point values, enter any string to finish: ");
+    
+    // keep asking for input till string appears and keep track of what is going in
     while (in.hasNextDouble()) {
      System.out.print("Please enter floating-point values, enter any string to finish: ");
      double num = in.nextDouble();
@@ -31,9 +34,12 @@ public class P4_5_ManwaiNguyen {
        largest = num; 
      }
     }
+    
+    // calculation
     double average = sum/count;
     double range = largest - smallest;
     
+    // answer
     System.out.println("The average of the values is " + average);
     System.out.println("The smallest of the values is " + smallest);
     System.out.println("The largest of the values is " + largest);

@@ -1,18 +1,13 @@
-side = 119
+from math import *
 
-for i in range(1, side+1):
-    spaces = side - i 
-    stars = 2*i -1 
-    print(spaces*"-", end='')
-    print(stars*"*", end='')
-    print(spaces*"-", end='')
-    print("")
+def prime(x):
+    for i in range(2,x):
+        if x%i == 0:
+            return False
+    return True
 
-for j in range(side-1, 0, -1):
-    spaces = side - j
-    stars = 2*j -1 
-    print(spaces*"-", end='')
-    print(stars*"*", end='')
-    print(spaces*"-", end='')
-    print("")
-
+x=0
+for i in range(2,int(sqrt(2000000))+1):
+    if prime(i):
+        x+=i 
+print(x)

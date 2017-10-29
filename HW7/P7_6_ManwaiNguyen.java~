@@ -1,0 +1,15 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 24, 2017
+  * Excercise: P7.6
+  * Purpose: 
+  * Input: 
+  * Outputs: 
+  * *******************************************/
+import java.util.Arrays;
+
+public class P7_6_ManwaiNguyen {
+  public static void main(String[] args) {
+    
+  }
+}
