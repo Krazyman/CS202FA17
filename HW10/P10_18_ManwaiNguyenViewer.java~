@@ -1,0 +1,19 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 31, 2017
+  * Excercise: P10.21
+  * Purpose: 
+  * Input: 
+  * Outputs: 
+  * *******************************************/
+import javax.swing.*;
+
+public class P10_18_ManwaiNguyenViewer {
+  public static void main(String[] args) {
+   JFrame frame = new ManwaiNQ4();
+   
+   frame.setTitle("Investment Chart");
+   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+   frame.setVisible(true);
+  }
+}

@@ -1,0 +1,24 @@
+import java.util.ArrayList;
+
+public class Message {
+  private String recipient;
+  private String sender;
+  private ArrayList<String> messageBody = new ArrayList<String>();
+  private String body = "";
+  
+  public Message(String r, String s) {
+    recipient = r;
+    sender = s;
+  }
+  
+  public void append(String text) {
+    messageBody.add(text);
+  }
+  
+  public void toString() {
+    for (int i=0; i=messageBody.size(); i++) {
+     body = body.concat(messageBody.get(i));
+     body = body.concat("\n");
+    }
+  } 
+}

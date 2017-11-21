@@ -1,0 +1,55 @@
+/********************************
+  * Program Title: ManwaiNQ4.java
+  * Purpose: Draw chart on frame
+  * Date: 11/3/17
+  * Input: max value that the bar can go to 
+  * Output: chart onto the frame
+  * *******************************/
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+import java.util.ArrayList;
+
+public class ManwaiNQ4Component extends JComponent {
+ private ArrayList<Double> values;
+ private double maxValue;
+ 
+ /* purpose of method: contains the array that holds the balance value
+  * @param max the max length of bar
+  * */ 
+ public ManwaiNQ4Component(Double max) {
+   values = new ArrayList<Double>();
+   maxValue = max;
+ }
+ 
+ /* purpose of method: add each balance value to the array
+  * @param value the value added to the arraylist
+  * */ 
+ public void append(double value) {
+  values.add(value); 
+ }
+ 
+ /* Purpose of method: paint the chart onto the frame
+  * @param
+  * */
+ public void paintComponent(Graphics g) {
+  final int GAP = 5;
+  final int BAR_HEIGHT = 10;
+  Graphics2D g2 = (Graphics2D) g;
+  Color color = new Color(0, 0, 0);
+  Color color1 = new Color(255, 128, 128);
+  
+  int y = GAP;
+  for (double value: values) {
+   String account = String.format("$%,.2f", value); // take the value and change it to string
+   int barWidth = (int) (getWidth() * value / maxValue);
+   int accWidth = g.getFontMetrics().stringWidth(account); // width of string
+   g.setColor(color);
+   g2.drawString(account, 100, y+BAR_HEIGHT);
+   g.setColor(color1);
+   g.fillRect(125+accWidth, y, barWidth, BAR_HEIGHT);
+   y += BAR_HEIGHT + GAP;
+  }
+   repaint();
+ }
+}

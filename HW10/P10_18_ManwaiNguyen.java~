@@ -1,0 +1,39 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Oct 31, 2017
+  * Excercise: P10.18
+  * Purpose: 
+  * Input: 
+  * Outputs: 
+  * *******************************************/
+
+import java.awt.Color;
+import java.awt.Graphics;
+import javax.swing.JFrame;
+import javax.swing.JComponent;
+
+public class P10_18_ManwaiNguyen {  
+  public static void main(String[] args) {   
+    // frame to draw with
+      JFrame frame = new JFrame();
+      final int FRAME_WIDTH = 400;
+      final int FRAME_HEIGHT = 400;
+      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);
+      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+      JComponent component = new JComponent()
+      {
+          public void paintComponent(Graphics graph)
+          {
+              draw(graph);
+          }
+      };      
+      frame.add(component);
+      frame.setVisible(true);
+   } 
+   
+  //@para graphics g
+  //@return null
+   public static void draw(Graphics g) {  
+     
+   }
+}

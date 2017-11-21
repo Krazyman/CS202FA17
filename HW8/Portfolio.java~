@@ -1,0 +1,51 @@
+/*******************************************
+  * Name: Manwai Nguyen
+  * Date: Nov 8, 2017
+  * Purpose: creates a bank account object
+  * Input: height and radius
+  * Outputs: The surface area and volume of the sodacan, if called
+  * *******************************************/
+
+public class Portfolio {
+  private double savings;
+  private double checkings;
+  
+  public Portfolio() {
+   savings = 0;
+   checkings = 0;
+  }
+  
+  public void deposit(double amount, String account) {
+    if (account = "c") {
+     checkings += amount; 
+    } else if (account = "s") {
+     savings += amount; 
+    }
+  }
+  
+  public void withdraw(double amount, String account) {
+    if (account = "c" && amount <= checkings) {
+     checkings -= amount; 
+    } else if (account = "s" && amount <= savings) {
+     savings -= amount; 
+    }
+  }
+  
+  public void transfer(double amount, String account) {
+    if (account = "c" && amount <= checkings) {
+     checkings -= amount; 
+     savings += amount;
+    } else if (account = "s" && amount <= savings) {
+     savings -= amount; 
+     checkings += amount;
+    } 
+  }
+  
+  public double getBalance(String account) {
+    if (account = "c") {
+     return checkings;
+    } else if (account = "s") {
+     return savings;
+    } 
+  }
+}

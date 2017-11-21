@@ -1,0 +1,58 @@
+/********************************
+  * Program Title: ManwaiNQ5.java
+  * Purpose: 
+  * Date: 11/3/17
+  * Input: 
+  * Output: 
+  * *******************************/
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class ClockComponent extends JComponent {
+
+   private double hours;
+   private double minute;
+   private final int CENTER_X = 175, CENTER_Y = 175;
+   private final int RADIUS = 650;
+   private final double MIN_PER_HOUR = 60;
+   private final double HOUR_PER_ROTATION = 12;
+
+   public ClockComponent(int hour, int min) {
+     if (hour>12) {
+      hours = hour -12; 
+     } else {
+     hours = hour;
+     }
+      minute = min;
+   }
+
+   public void paintComponent(Graphics g) {
+     Graphics2D g2 = (Graphics2D) g;
+     Color black = new Color(0, 0, 0);
+     g2.setStroke(new BasicStroke(10));
+     g.setColor(black);
+     g2.drawOval(CENTER_X, CENTER_Y, RADIUS, RADIUS);
+
+     double angle = 10*Math.PI/6;
+     for (int i=1; i<=12; i++) {
+      int x = (int) Math.round(300 * Math.cos(angle));
+      int y = (int) Math.round(300 * Math.sin(angle));
+      String num = String.format("%s", i);
+      g.drawString(num, x+500, y+500);
+      angle += Math.PI/6;
+     }
+     
+     double hourAngle = (hours*(Math.PI/6)) + ((minute/MIN_PER_HOUR)*Math.PI/6);
+     double minAngle = ((minute/MIN_PER_HOUR)*2*Math.PI);
+     int hourX = (int) Math.round(300 * Math.cos(hourAngle));
+     int hourY = (int) Math.round(300 * Math.sin(hourAngle));
+     int minX = (int) Math.round(300 * Math.cos(minAngle));
+     int minY = (int) Math.round(300 * Math.sin(minAngle));
+     g.drawLine(CENTER_X+200, CENTER_Y+400, hourX, hourY);
+     g.setColor(Color.red);
+     g.drawLine(CENTER_X+275, CENTER_Y+275, minX, minY);
+     
+   }
+ }

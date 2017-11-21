@@ -1,0 +1,13 @@
+public class Person {
+ private String name;
+ private int birth;
+ 
+ public Person(String n, int y) {
+  name = n;
+  birth = y;
+ }
+ 
+ public String toString(int birth) {
+  return Integer.toString(birth); 
+ }
+}
