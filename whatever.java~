@@ -1,0 +1,18 @@
+import java.util.Scanner;
+import java.util.ArrayList;
+import java.io.File;
+import java.io.FileNotFoundException;
+
+public class whatever {
+  public static void main(String[] args) throws FileNotFoundException {
+    ArrayList<Double> nums = new ArrayList<>();
+    Scanner in = new Scanner(System.in);
+    int lineCounter = 0, numCounter = 0;
+    while(in.hasNextLine()){
+      
+        
+    }
+    
+  }
+  
+}

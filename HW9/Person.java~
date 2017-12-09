@@ -6,4 +6,8 @@ public class Person {
   name = n;
   birth = y;
  }
+ 
+ public String toString(int birth) {
+  return Integer.toString(birth); 
+ }
 }

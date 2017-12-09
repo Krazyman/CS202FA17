@@ -1,0 +1,8 @@
+public interface Filter {
+  
+  boolean accept(Object x);
+  
+  public static ArrayList<Object> collectAll(ArrayList<Object> objects, Filter f) {
+    
+  }
+}

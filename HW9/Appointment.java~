@@ -1,0 +1,42 @@
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public class Appointment {
+    private String description;
+    Date date;
+
+    public Appointment(String description, int day, int month, int year) throws ParseException {
+        this.setDescription(description);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        this.setDate(simpleDateFormat.parse(String.format("%d/%d/%d", day, month, year)));
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
+
+    public String toString() {
+        return String.format("Appointment is: %s. Date is: ", this.getDescription(), this.getDate()
+                .toString());
+    }
+
+    public boolean occursOn(int year, int month, int day) throws ParseException {
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date date = simpleDateFormat.parse(String.format("%d/%d/%d", day, month, year));
+
+        return this.getDate().equals(date);
+    }
+}

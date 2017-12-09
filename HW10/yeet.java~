@@ -1,0 +1,28 @@
+import java.util.Scanner;
+import java.awt.Color;
+
+public class yeet {
+  public static void main(String[] args) {
+    Scanner in = new Scanner(System.in); 
+    System.out.println("color: ");
+    String color = in.next();
+    Color colors;
+    color.toLowerCase();
+    switch(color) {
+      case "black": return Color.black; 
+      case "blue": return Color.blue; 
+      case "cyan": return Color.cyan; 
+      case "gray": return Color.gray; 
+      case "green": return Color.green; 
+      case "yellow": return Color.yellow; 
+      case "magenta": return Color.magenta; 
+      case "orange": return Color.orange; 
+      case "pink": return Color.pink; 
+      case "red": return Color.red; 
+      case "white": return Color.white; 
+      case "darkgray": return Color.darkGray; 
+      case "lightgray": return Color.lightGray; 
+    }
+    System.out.println(color);
+  }
+}

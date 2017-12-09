@@ -1,0 +1,7 @@
+import java.text.ParseException;
+
+public class OneTime extends Appointment {
+    public OneTime(String description, int day, int month, int year) throws ParseException {
+        super(description, day, month, year);
+    }
+}

@@ -1,0 +1,22 @@
+/* Creates an Instructor that is a person and has a salary */
+
+public class Instructor extends Person {
+    private double salary;
+
+    public Instructor(String name, int yearOfBirth, double s) {
+        super(name, yearOfBirth);
+        salary = s;
+    }
+
+    public double getSalary() {
+        return this.salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public String toString() {
+        return super.toString() + " salary: " + this.getSalary();
+    }
+}
