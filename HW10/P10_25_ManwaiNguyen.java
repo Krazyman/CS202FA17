@@ -22,7 +22,7 @@ public class P10_25_ManwaiNguyen {
     Color[] colors = new Color[3];
     int index = 0;
     String color;
-    int way;
+    String way;
     String ask = "(black, blue, cyan, gray, green, yellow, magenta, orange, pink, red, white, darkgray, lightgray)";
     
     
@@ -39,11 +39,7 @@ public class P10_25_ManwaiNguyen {
     System.out.print(way);
     JComponent component = new JComponent() {
       public void paintComponent(Graphics Flag) {
-        if (way == 1) {
-          drawFlagV(Flag, 100, 100, colors[0], colors[1], colors[2]);
-        } else if (way == 2) {
-          drawFlagH(Flag, 100, 100, colors[0], colors[1], colors[2]);
-        }
+        
       }
     };
     
